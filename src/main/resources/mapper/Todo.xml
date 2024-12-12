@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jung.todo.repository.TodoRepository">
+
+    <insert id="todoRegister" useGeneratedKeys="true" keyProperty="todoNumber">
+        INSERT INTO todo (title, description, target_date) VALUES (#{title}, #{description}, #{targetDate})
+    </insert>
+
+    <select id="todoContent" parameterType="int" resultType="TodoEntity">
+        SELECT * FROM todo WHERE todo_Number = #{todoNumber};
+    </select>
+
+</mapper>
