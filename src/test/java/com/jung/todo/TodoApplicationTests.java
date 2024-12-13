@@ -35,9 +35,9 @@ class TodoApplicationTests {
 	@Test
 	void todoRegister() {
 		// given : 할 일을 저장
-		String title = "가슴 운동";
+		String title = "운동";
 		String description = "윗가슴 운동";
-		LocalDate targetDate = LocalDate.parse("2024-12-20");
+		LocalDate targetDate = LocalDate.parse("2024-12-31");
 
 		TodoRegisterDto todoRegisterDto = new TodoRegisterDto(0, title,description,targetDate);
 
