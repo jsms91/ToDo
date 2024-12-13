@@ -14,7 +14,8 @@ public enum ExceptionEnum {
     TODO_INFO_ERROR(HttpStatus.INTERNAL_SERVER_ERROR, "서버 에러"), // 3. TodoInfo
     UPDATE_ERROR(HttpStatus.INTERNAL_SERVER_ERROR, "업데이트 실패"), //4. todoUpdate
     SETINACTIVE_ERROR(HttpStatus.INTERNAL_SERVER_ERROR, "비활성화 실패"), // 4. setInactive
-    DELETE_ERROR(HttpStatus.INTERNAL_SERVER_ERROR, "삭제 실패"); //5. todoDelete
+    DELETE_ERROR(HttpStatus.INTERNAL_SERVER_ERROR, "삭제 실패"), //5. todoDelete
+    ACTIVE_RESET_ERROR(HttpStatus.INTERNAL_SERVER_ERROR, "활성화 초기화 실패"); //6. activeReset
 
     private HttpStatus status;
     private String message;

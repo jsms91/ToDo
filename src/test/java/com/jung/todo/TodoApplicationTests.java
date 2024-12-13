@@ -23,6 +23,7 @@ import static org.mockito.ArgumentMatchers.anyInt;
 import static org.mockito.Mockito.verify;
 
 @SpringBootTest
+//@ExtendWith(MockitoExtension.class)
 class TodoApplicationTests {
 	@Mock
 	private TodoRepository todoRepository; // 레포지토리 Mock

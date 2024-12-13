@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jung.todo.repository.TodoSchedulerRepository">
+
+    <!-- 기준일 포함 지난 날짜 비활성화 -->
+    <update id="setInactive" parameterType="java.time.LocalDate">
+        UPDATE todo
+        SET active = false
+        WHERE target_date  BETWEEN '1900-01-01' AND #{referenceDate}
+    </update>
+
+</mapper>
