@@ -104,7 +104,7 @@ https://gelatinous-paradox-110.notion.site/DB-15c59728205480528a28e965ae44eaf1?p
 > http://localhost:8080/todo 또는 http://localhost:8080/swagger-ui/index.html
 
 ### API 명세서(링크 클릭)
-> https://gelatinous-paradox-110.notion.site/Todo-Api-15b597282054807ca87bdc1515516bda?pvs=74
+> https://gelatinous-paradox-110.notion.site/15b597282054802f9d18d05016172a3b?v=8d2a4ea2661d49c49e7aa95747c947df
 
 <br/>
 
