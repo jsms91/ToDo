@@ -9,6 +9,8 @@
 ### 빌드 도구: `Gradle`
 ### 개발언어: `JAVA(JDK-21)`
 
+<br/>
+
 # ✅ 소스 빌드 및 실행 방법
 ### 1. 프로젝트 클론
 > git clone https://github.com/jsms91/ToDo.git
@@ -58,6 +60,8 @@ https://gelatinous-paradox-110.notion.site/DB-15c59728205480528a28e965ae44eaf1?p
 ### 6. 테스트 설정 수정(4번에 삽입 쿼리 실행 후 변경사항 없으면 수정x)
 > TodoApplicationTests에서 4.todoUpdate 테스트의 todoNumber 값을 존재하는 데이터로 수정합니다.
 
+<br/>
+
 # ✅ 주력으로 사용한 라이브러리
 ### 1. MyBatis
 > MyBatis는 SQL을 직접 작성할 수 있는 유연성과 함께, XML 매핑 및 어노테이션 기반 매핑을 지원하여 복잡한 SQL 작업을 간소화할 수 있는 프레임워크입니다. 이처럼 명시적으로 SQL을 제어할 수 있다는 점에서 MyBatis를 사용하였습니다. 또한, JPA 방식도 있지만 교육과정에서 MyBatis를 사용하여 프로젝트를 진행한 경험이 있었기 때문에, 제한된 기간 내 개발을 위해 익숙한 MyBatis를 선택하였습니다.
@@ -68,7 +72,8 @@ https://gelatinous-paradox-110.notion.site/DB-15c59728205480528a28e965ae44eaf1?p
 ### 3. SpringDoc (Swagger)
 > SpringDoc은 OpenAPI 사양을 기반으로 Swagger UI를 생성하여, API 명세서를 시각적으로 확인하고 API를 직접 테스트할 수 있는 환경을 제공합니다. 특히, 프론트엔드와 백엔드가 별도로 개발되는 환경에서, 백엔드 개발자는 프론트엔드에서 구현한 UI를 통해 API 동작을 확인하기 어렵습니다. 그러나 Swagger를 사용하면 API 명세를 문서화할 뿐만 아니라, 데이터 요청 및 응답을 시뮬레이션하여 통신 과정을 검증할 수 있습니다. 이러한 이유로 Swagger를 도입하여 API의 동작을 확인하며 개발을 진행하였습니다.
 
-
+<br/>
+ 
 # ✅ API 명세서(Swagger 사용)
 ### [Swagger URL]
 > http://localhost:8080/todo 또는 http://localhost:8080/swagger-ui/index.html
@@ -76,9 +81,13 @@ https://gelatinous-paradox-110.notion.site/DB-15c59728205480528a28e965ae44eaf1?p
 ### API 명세서(링크 클릭)
 > https://gelatinous-paradox-110.notion.site/Todo-Api-15b597282054807ca87bdc1515516bda?pvs=74
 
+<br/>
+
 # ✅ 앱 설명
 > 일정을 관리할 수 있는 어플리케이션으로서 기본 CRUD 작업(등록, 조회, 수정, 삭제) 외에, 
 앱 실행 시 자동으로 해당날짜가 지나간 일정을 비활성화 상태로 처리하였습니다.
+
+<br/>
 
 # ✅ 기능설명
 ### 1. 등록(todoRegister)
@@ -100,6 +109,8 @@ https://gelatinous-paradox-110.notion.site/DB-15c59728205480528a28e965ae44eaf1?p
 
 ### 5. 비활성화 처리(setExpiredInactive)
 > 앱을 실행 할 때 지나간 해당 일에 대한 게시물 활성화 상태를 비활성화로 변경
+
+<br/>
 
 # ✅ 테스트 게이스
 > 경로 : test / java / com.jung.todo / TodoApplicationTests, SchedulerTests
