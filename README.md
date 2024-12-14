@@ -58,7 +58,7 @@
 https://gelatinous-paradox-110.notion.site/DB-15c59728205480528a28e965ae44eaf1?pvs=4
 
 ### 6. 테스트 설정 수정(4번에 삽입 쿼리 실행 후 변경사항 없으면 수정x)
-> TodoApplicationTests에서 4.todoUpdate 테스트의 todoNumber 값을 존재하는 데이터로 수정합니다.
+> TodoApplicationTests에서 4.todoUpdate 테스트의 todoNumber 값을 존재하는 데이터로 수정.
 
 <br/>
 
@@ -103,8 +103,8 @@ https://gelatinous-paradox-110.notion.site/DB-15c59728205480528a28e965ae44eaf1?p
 ### [Swagger URL]
 > http://localhost:8080/todo 또는 http://localhost:8080/swagger-ui/index.html
 
-### API 명세서(링크 클릭)
-> https://gelatinous-paradox-110.notion.site/15b597282054802f9d18d05016172a3b?v=8d2a4ea2661d49c49e7aa95747c947df
+### API 명세서
+> https://gelatinous-paradox-110.notion.site/15b597282054802f9d18d05016172a3b?v=8d2a4ea2661d49c49e7aa95747c947df&pvs=4
 
 <br/>
 
