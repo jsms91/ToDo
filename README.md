@@ -11,7 +11,7 @@
 
 <br/>
 
-# ✅ 소스 빌드 및 실행 방법
+# ✅ 소스 빌드 및 설정 방법
 ### 1. 프로젝트 클론
 > git clone https://github.com/jsms91/ToDo.git
 
@@ -62,6 +62,31 @@ https://gelatinous-paradox-110.notion.site/DB-15c59728205480528a28e965ae44eaf1?p
 
 <br/>
 
+# ✅ 작동 확인 방법
+> 스웨거 URL을 통해 데이터를 등록, 조회, 수정, 삭제를 할 수 있다.
+
+- URL : http://localhost:8080/todo 또는 http://localhost:8080/swagger-ui/index.html
+
+### 1. todo 등록(todo/todoRegister)
+> title, description, targetDate를 입력 후 Execute <br/>
+> (todoNumber은 입력x, targetDate 형식은 yyyy-MM-dd으로 작성)
+
+### 2. todo 목록(todo/todoList)
+> Execute 하면 전체 목록 조회(일단은 활성화,비활성화 상태 모두 조회)
+
+### 3. 상세 정보(todo/todoInfo/{todoNumber})
+> todoNumber 입력 후 Execute
+
+#### 4. todo 수정(todo/todoModify/{todoNumber})
+> Parameters의 수정 할 todoNumber 입력<br/>
+> title, description, targetDate, status를 입력 후 Execute<br/>
+> (todoNumber은 입력x, targetDate 형식은 yyyy-MM-dd으로 작성, status는 true 또는  false)
+
+#### 5. todo 삭제(todo/todoDelete/{todoNumber})
+> 삭제할 todoNumber 입력 후 Execute
+
+<br/>
+
 # ✅ 주력으로 사용한 라이브러리
 ### 1. MyBatis
 > MyBatis는 SQL을 직접 작성할 수 있는 유연성과 함께, XML 매핑 및 어노테이션 기반 매핑을 지원하여 복잡한 SQL 작업을 간소화할 수 있는 프레임워크입니다. 이처럼 명시적으로 SQL을 제어할 수 있다는 점에서 MyBatis를 사용하였습니다. 또한, JPA 방식도 있지만 교육과정에서 MyBatis를 사용하여 프로젝트를 진행한 경험이 있었기 때문에, 제한된 기간 내 개발을 위해 익숙한 MyBatis를 선택하였습니다.
@@ -109,6 +134,10 @@ https://gelatinous-paradox-110.notion.site/DB-15c59728205480528a28e965ae44eaf1?p
 
 ### 5. 비활성화 처리(setExpiredInactive)
 > 앱을 실행 할 때 지나간 해당 일에 대한 게시물 활성화 상태를 비활성화로 변경
+
+### 6. 예외 처리(TodoExcepition)
+> 직접 설정한 예외를 사용해 todoServiceImpl에서 각 서비스 실행시 설정한 예외로 던짐(처리)<br/>
+- `exception` 패키지에 작성
 
 <br/>
 

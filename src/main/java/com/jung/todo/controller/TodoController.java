@@ -25,7 +25,7 @@ public class TodoController {
 
     //1. 할 일 등록
     @Operation(summary = "할 일 등록", description = "title,description,targetDate를 입력받아 등록")
-    @PostMapping("/register")
+    @PostMapping("/todoRegister")
     public ResponseEntity<ResultDto> todoRegister(@RequestBody TodoRegisterDto todoRegisterDto) {
         log.info("할 일 등록");
 
@@ -36,7 +36,7 @@ public class TodoController {
     }
 
     //2. 할 일 목록
-    @GetMapping("/list")
+    @GetMapping("/todoList")
     public ResponseEntity<ResultDto> todoList() {
         log.info("할 일 목록");
 
