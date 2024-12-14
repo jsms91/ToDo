@@ -108,7 +108,7 @@ class TodoApplicationTests {
 	@Test
 	void todoUpdate() {
 		//given: 수정할 번호와 데이터
-		int todoNumber = 15;
+		int todoNumber = 7;
 		String title = "제목을 수정합니다.";
 		String description = "내용을 수정합니다.";
 		LocalDate targetDate = LocalDate.parse("2024-12-30");
