@@ -48,7 +48,7 @@ public class TodoController {
 
     //3. 할 일 상세내용
     @GetMapping("/todoInfo/{todoNumber}")
-    public ResponseEntity<ResultDto> todoContent(@PathVariable("todoNumber") int todoNumber) {
+    public ResponseEntity<ResultDto> todoInfo(@PathVariable("todoNumber") int todoNumber) {
         log.info("할 일 내용");
 
         TodoInfoDto todoInfo = todoService.todoInfo(todoNumber);
