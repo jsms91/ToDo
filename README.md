@@ -1,4 +1,4 @@
-# 백엔드 개발과제
+# Spring Boot를 사용해 RESTful API 기반으로 CRUD 기능과 예외처리 구현
 <hr/>
 
 # ✅ 개발 환경
